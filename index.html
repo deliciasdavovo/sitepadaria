@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Padaria Artesanal | Delícias da Vovó</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Work+Sans:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#81290d",
+                        "surface-container-low": "#fcf2e4",
+                        "surface-tint": "#506536",
+                        "primary": "#475b2e",
+                        "on-secondary-fixed": "#3b0a00",
+                        "outline": "#75786d",
+                        "on-surface": "#1f1b13",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#742004",
+                        "on-primary-fixed-variant": "#394d21",
+                        "surface-dim": "#e2d9cb",
+                        "secondary-fixed": "#ffdbd1",
+                        "inverse-primary": "#b7cf96",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#214971",
+                        "surface": "#fff8f2",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#325781",
+                        "primary-container": "#5f7444",
+                        "secondary-container": "#ff8763",
+                        "background": "#fff8f2",
+                        "secondary": "#a04022",
+                        "tertiary-fixed": "#d2e4ff",
+                        "inverse-surface": "#353027",
+                        "surface-bright": "#fff8f2",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#ebe1d3",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#c5c8ba",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#e1f9bd",
+                        "surface-container-high": "#f1e7d9",
+                        "primary-fixed-dim": "#b7cf96",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#d3ebb0",
+                        "surface-container-highest": "#ebe1d3",
+                        "secondary-fixed-dim": "#ffb59f",
+                        "tertiary-fixed-dim": "#a5c9f9",
+                        "surface-container": "#f6eddf",
+                        "on-surface-variant": "#44483e",
+                        "on-tertiary-container": "#eaf1ff",
+                        "on-background": "#1f1b13",
+                        "tertiary-container": "#4c709b",
+                        "on-primary-fixed": "#102000"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "80px",
+                        "section-gap": "120px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "body-md": ["Work Sans"],
+                        "body-lg": ["Work Sans"],
+                        "label-md": ["Work Sans"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                        "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .wavy-mask {
+            mask-image: url("data:image/svg+xml,%3Csvg width='100%25' height='40' viewBox='0 0 1200 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 40C300 40 300 0 600 0C900 0 900 40 1200 40' fill='black'/%3E%3C/svg%3E");
+            mask-repeat: repeat-x;
+            mask-position: bottom;
+        }
+        .editorial-rule {
+            height: 1px;
+            background-color: theme('colors.outline-variant');
+            width: 100%;
+        }
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&amp;display=swap" rel="stylesheet"/></head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- Header / Navigation -->
+<nav class="w-full top-0 sticky z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-full mx-auto transition-transform duration-300">
+<div class="font-headline-md text-headline-md text-secondary italic">Delícias da Vovó</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Our Story</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="menu.html">The Menu</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="units.html">The Units</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Contact</a>
+<button class="bg-secondary text-on-secondary px-6 py-2 rounded-full font-label-md text-label-md hover:bg-on-secondary-fixed-variant transition-all duration-300">Order Now</button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+<!-- New Hero Section inspired by IMAGE_4 layout with IMAGE_3 background -->
+<header class="relative w-full h-[85vh] flex items-center justify-center overflow-hidden">
+<!-- Full-width background image -->
+<div class="absolute inset-0 z-0">
+<img alt="The Slow Hearth Terrace" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu7YdqajQPbp6psvdpYpqAFnyeeMTcnhOjfHTEZJ21yBbtvV72YGAnwEZP6bMBX0sjYaMSH_LgiCsyAXT8mY0VR37cyFySHhNT4MtbtTp4THi6kU1i-NNXLCyqgutNBF4jXqWiDlEF4JsJYFY_Boeuh0TlM5Tebg22xxLwB7DWrONxe9lbvj9EYOG9XMk8gp8qYbDCTUaPJafN9wo_xtW4jlpHj2p-N_D_2DgrxklSiPNamDWmsVlLbL0irgjeRWY7Xf0LZIwoDRuO"/>
+<!-- Dark overlay for readability as per IMAGE_4 style -->
+<div class="absolute inset-0 bg-black/30"></div>
+</div>
+<!-- Centered Content Overlay -->
+<div class="relative z-10 max-w-4xl px-margin-mobile text-center text-white"><div class="mb-4 animate-fade-in">
+<span class="text-5xl md:text-7xl text-white block mb-2 drop-shadow-lg" style="font-family: 'Dancing Script', cursive;">Delícias da Vovó</span>
+<span class="font-headline-md text-white/90 text-lg md:text-xl uppercase tracking-[0.2em] drop-shadow-md">Paixão em servir desde 2005</span>
+</div>
+<h1 class="font-display-lg text-[40px] md:text-display-lg mb-6 leading-tight drop-shadow-lg">
+            Aqui ajudamos você a viver uma vida <span class="italic">mais artística</span>, todos os dias.
+        </h1>
+<p class="font-body-lg text-body-lg mb-10 max-w-2xl mx-auto leading-relaxed drop-shadow-md">
+            Nascida da paciência e do respeito ao tempo, a Padaria Artesanal é um refúgio para quem busca a essência do pão, o calor do jardim e o sabor de momentos genuínos.
+        </p>
+<div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+<button class="bg-secondary text-on-secondary px-10 py-4 rounded-full font-label-md text-label-md hover:bg-on-secondary-fixed-variant hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                Descubra Nossos Pães
+            </button>
+<button class="border-2 border-white text-white px-10 py-4 rounded-full font-label-md text-label-md hover:bg-white/20 transition-all duration-300 backdrop-blur-sm">
+                Reserva de Mesa
+            </button>
+</div>
+</div>
+</header>
+<!-- Main Content Section: Bento Collage (Maintained from SCREEN_10) -->
+<section class="px-margin-mobile md:px-margin-desktop py-section-gap relative">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-stretch">
+<!-- Main Hero Image -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl border border-outline-variant">
+<img alt="Nossa Padaria" class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRRMNziQRMifRcaISHDtCIa2X6hSemfK5kVsu25FDBeQ9z_9AEBngOzzK3Whn9p6WAXZZfSTgsj2JyxXXtwxpdaq4ancLxBv9Y9pxodlTG3vkx214gNHDwPvUm0gLmVfyVPYwX6Lpd87NSsr4KQuPXsGrhzNMa-ezYwelvYSxJ72bGSEjmV7Q_8qTAG_drb87jqOMV9z6n4KVJYEf2gnZwoyS9tQiQBZMrFnNPNjYXXWQ5DW_PE2qEJWHPzVIt6EqhNeMCpec7hMdl"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-8 left-8 text-white">
+<span class="font-label-md text-label-md uppercase tracking-widest mb-2 block">O Coração da Casa</span>
+<h2 class="font-headline-md text-headline-md">Farinha, Água e Tempo</h2>
+</div>
+</div>
+<!-- Side Card: Essence -->
+<div class="md:col-span-4 bg-surface-container-low p-8 rounded-xl border border-outline-variant flex flex-col justify-center">
+<h3 class="font-headline-md text-headline-md text-primary mb-6 italic">La Vita Lenta</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+                Nossa essência reside no processo. Cada fermentação dura 24 horas, respeitando o ritmo biológico e realçando as notas mais profundas do trigo orgânico.
+            </p>
+<div class="editorial-rule mb-8"></div>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 font-label-md text-label-md">
+<span class="material-symbols-outlined text-secondary">eco</span> Ingredientes Locais
+                </li>
+<li class="flex items-center gap-3 font-label-md text-label-md">
+<span class="material-symbols-outlined text-secondary">schedule</span> Fermentação Natural
+                </li>
+<li class="flex items-center gap-3 font-label-md text-label-md">
+<span class="material-symbols-outlined text-secondary">favorite</span> Amassado à Mão
+                </li>
+</ul>
+</div>
+<!-- Bottom Horizontal Image -->
+<div class="md:col-span-12 rounded-xl overflow-hidden border border-outline-variant h-[300px]">
+<img alt="Ambiente Interno" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKsZ4vr2LXiM208I6FBqi-3WRkIjC_Ruy7-K4ZBSM8jlj2Xf6-ngZpMdkfgISmZoG1pzVZUPmSUZOnbQPu_IAQE5y6Hw-nAtOjwLXYEPsV23c9aOxl7jKKqVybJlfE4kdIau0TPf8rEFg2SuEZUH7KlOGC3Egj7rDsCis0AW-tCamC69mBDbGoJnRdGb_NsqbAZX8tiik9hUzyr7AmK1llRTJvviQ4teFe-VQ6C8cXOfbroFwqt-cVtVKSOsWfT5z-KssK8WHd96Bw"/>
+</div>
+<!-- Split Section -->
+<div class="md:col-span-6 space-y-gutter">
+<div class="bg-primary-container/10 p-12 rounded-xl border border-primary/20">
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Almoço no Jardim</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Servimos refeições leves inspiradas na estação, cercados por ervas aromáticas e o canto dos pássaros. Uma pausa necessária no meio do dia.
+                </p>
+</div>
+<img alt="Nosso Jardim" class="w-full h-[400px] object-cover rounded-xl border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw9rdAtqKYgS-p3ZIZNmN5C5H3wQs6nxSVbogQ_GmdzFiL9x_pSwMvVlLLoCXFaQkntN9rFkftH0MQJ_fZNhTLSEYLf6PkR3Q91is5mS75JBtbPu8yuK22rCtxOrcz2bJDSFvU_yAOIhxoI06v9KPZOysU3Jz5sDwoVmKrAjhFZ5HBeyFmSPRBrXnlw2vvtl-XV8YtHdMHAOuPDpjfiTe0cFC6GAs7IQ-_4iUGGaNiQydD7bfX5fDlhyupzC0pDujIy3F3wheeZ3Ph"/>
+</div>
+<div class="md:col-span-6 flex flex-col justify-between">
+<div class="relative p-12 bg-secondary/5 rounded-xl border border-secondary/20 h-full flex flex-col justify-center">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6">restaurant_menu</span>
+<h3 class="font-display-lg text-headline-lg text-on-secondary-fixed-variant mb-4">Menu Sazonal</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 italic">
+                    "A simplicidade é o último grau de sofisticação."
+                </p>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<span class="font-label-md text-label-md font-bold block mb-2">Tostada de Figo</span>
+<span class="text-on-surface-variant text-sm">Pão de levain, queijo de cabra e mel silvestre.</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold block mb-2">Quiche da Horta</span>
+<span class="text-on-surface-variant text-sm">Legumes grelhados e ervas do nosso jardim.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Wavy Divider -->
+<div class="w-full bg-surface-container-highest h-24 wavy-mask"></div>
+<!-- Meet The Founder Style Section (Maintained from SCREEN_10) -->
+<section class="bg-surface-container-highest py-24 px-margin-mobile md:px-margin-desktop overflow-hidden">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-20 items-center">
+<div class="w-full md:w-1/2 relative">
+<div class="absolute -top-4 -left-4 -right-4 -bottom-4 border-2 border-secondary/30 rounded-2xl rotate-3"></div>
+<div class="relative rounded-xl overflow-hidden border-4 border-surface shadow-xl">
+<img class="w-full aspect-[4/5] object-cover" data-alt="A cinematic, warm portrait of an artisanal baker in a sunlit kitchen atelier." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVx_RQCs7_0YyUFBU1eCsKd4os1bY0aHQFn68IQiHqsdoo-eTuArBkdPMCGsnjCm8U501FfwsAUaaee87ErD6VskH3r1Ua0ea9Pm2hmGrHZMlW6eUVhycmj1nWLu7VuDjUKNgn7s1rOg4ZLz6auP4ynpSsh4BTsgw6lol0yzKy5u14bdwgtTqgnO1Gf9--bs5btanVjAtkpRj9mspTKnW-Mny_8Gl5sKhCJUg97UtCoMsjefEHC8S6DeiFZmIHiTVdU8YGdZDHz10s"/>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<h2 class="font-display-lg text-display-lg text-primary mb-8 italic">A Alma por Trás do Forno</h2>
+<div class="space-y-6 font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+<p>
+                    "Cresci entre o aroma de fermento e a terra molhada do jardim da minha avó. Para mim, cozinhar nunca foi sobre pressa, mas sobre o diálogo entre as mãos e a matéria-prima."
+                </p>
+<p>
+                    Formada em gastronomia e apaixonada por botânica, fundei a Padaria Artesanal para resgatar a conexão perdida com o alimento. Aqui, cada detalhe é curado para que você se sinta em casa.
+                </p>
+<div class="pt-8">
+<img alt="Assinatura" class="h-16 opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrCIqA_j_HRAsQz347zq3ZaEtGvDIwn3BZ5jmaaviU0HMgnChucxDnAOmx3nDOUIwhjsDlEnte4CDD7W2fldVvaa_74HWpYQ6FmJQpEVNpYAMBQ-sqNDV-HJO7-3TPV2XTc9KrudLrdrxH3xTeALPrE2pGXuhbE4fr4N-PCH8S3c22VXZEOeRBl2c3az99oCBijokpCW1BTTa7hlsU513g4VYWHXSkvN3zOlglpqsj1hdNIEp7rileBJozjlG_YSiyn48PMcqSNd3E"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Instagram / Gallery Strip (Maintained from SCREEN_10) -->
+<section class="py-24 bg-surface">
+<div class="text-center mb-16">
+<h3 class="font-label-md text-label-md uppercase tracking-[0.2em] text-outline mb-4">Siga Nossa Jornada</h3>
+<p class="font-headline-md text-headline-md">@padaria_artesanal</p>
+</div>
+<div class="flex overflow-x-auto gap-4 px-4 no-scrollbar">
+<div class="min-w-[300px] h-[300px] rounded-lg overflow-hidden flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRIAuhOrhkNanIO5QaXEnlWTQiW4xir4v4jQJwHjqqsaJkX1S0SDul8Gn94g_f-UPV_f2h8AXSh2kfoMLYwQbMkuP93l5NCoTQz_VGQculIduVATaQcyCDTQvpPtkC1xqWtxTyOkUbaEXjRMIM4xjOlHHZuQ5yZbv3IUzA8GRSiWiE42wv0iADv5AhdmWLATDEE5S_ZA_wR8icVKO9Q54rXIs-PLKwaISMjda_RZvdQ_U5MJGfTJsAQ7mU6sX0roBFCTKEyeTQ28LP"/>
+</div>
+<div class="min-w-[300px] h-[300px] rounded-lg overflow-hidden flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD17M5cLnoXaNXDIeilulmucEiWbKbkBg7euJbPvpIXn_R7g7IYArry0ugiJK5j6Yzn2rlB2tFDVLMJFeyz9Wy2yLF7pS5XyxePN9PqZwm7IBWhtPBZpoLuP3HJR47V5-Q2a6rLUSp5uqWgBpdpJeyiLghLiKMVKJ3tnQk6JSY4GMI3ZS9zrHmau9qLYmBbvP_D3a2vqzhZIiBTXaY5SCjnbdd7Ajt0oX5HAZRIVvAcdQo63Derbuv_7Zqtuyo5uQX0dQh5PVPu6Ss1"/>
+</div>
+<div class="min-w-[300px] h-[300px] rounded-lg overflow-hidden flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT3imoOace_XUEBC4pFnFr_E0GcgWu0y08SPX9OexghkmMrHPAhCm594ux7giQih0R4IqqbIQmf-8oPwKU9RV9eiwn3miYqG3xJR0I1wJ5ozbQB_RK7coj44AmU9ZXopKcQxlxeZfUFQhNS4mmXDpZnPeAIPhrcf5_XQO93CpK14GLQuCf0Q9fElXO0mqW2HSILt0KBxjXD99-2kTX4d2buodr4pRsimFciGc2wsr9lvMLZQJkSyRsdSbuET6PCuvU4dxg01VKJwTL"/>
+</div>
+<div class="min-w-[300px] h-[300px] rounded-lg overflow-hidden flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI-l2yi43aHOzF-lJuAtnlnlQ2gYvTTA20QwY2DF8yUPrdfaFidIJoEw6iIePLRCYNpmMvIFR6EEjfKHC7yY-i0d8KQ8twtYmR5H-qY234221vseaCu17eI-cNvhbXY5fUDSs4YFgqQ7HRns-8ESjiEysfy8NY3s3iKOEQeUL2RXaBcFnhWDJDuuyGdPbAk7B5ZV8wGj0Wq1SFooTK3Em02EXyuMw3BUPNuOyd0kWNquN05zFyN37zLLgRYBlgt2WTARnCATydJL2l"/>
+</div>
+</div>
+</section>
+<!-- Footer (Maintained from SCREEN_10) -->
+<footer class="bg-surface-container-highest border-t border-outline-variant w-full py-section-gap">
+<div class="flex flex-col md:flex-row justify-between items-start px-margin-mobile md:px-margin-desktop gap-gutter">
+<div class="max-w-sm">
+<div class="font-headline-md text-headline-md text-secondary italic mb-6">Delícias da Vovó</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Honrando a tradição e o tempo. Venha nos visitar e redescubra o prazer da simplicidade.
+            </p>
+</div>
+<div class="grid grid-cols-2 gap-20">
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md font-bold text-primary">Navegação</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary underline decoration-secondary underline-offset-4 hover:translate-x-1 transition-all" href="#">Sustentabilidade</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary underline decoration-secondary underline-offset-4 hover:translate-x-1 transition-all" href="#">Trabalhe Conosco</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary underline decoration-secondary underline-offset-4 hover:translate-x-1 transition-all" href="#">Privacidade</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md font-bold text-primary">Contato</h4>
+<span class="font-body-md text-body-md text-on-surface-variant">Rua das Flores, 123</span>
+<span class="font-body-md text-body-md text-on-surface-variant">São Paulo, SP</span>
+<span class="font-body-md text-body-md text-on-surface-variant">(11) 98765-4321</span>
+</div>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop mt-24 pt-8 border-t border-outline-variant text-center md:text-left">
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 The Slow Hearth. Crafted with patience and flour.</p>
+</div>
+</footer>
+<script>
+    // Micro-interaction for header hide/show on scroll
+    let lastScroll = 0;
+    const nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll <= 0) {
+            nav.style.transform = 'translateY(0)';
+            nav.classList.remove('shadow-sm');
+            return;
+        }
+
+        if (currentScroll > lastScroll && currentScroll > 100) {
+            // Scroll Down
+            nav.style.transform = 'translateY(-100%)';
+        } else if (currentScroll < lastScroll) {
+            // Scroll Up
+            nav.style.transform = 'translateY(0)';
+            nav.classList.add('shadow-sm');
+        }
+        lastScroll = currentScroll;
+    });
+</script>
+</body></html>

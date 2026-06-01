@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nossas Unidades | The Slow Hearth</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Work+Sans:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .wavy-divider-top {
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z'/%3E%3C/svg%3E");
+            mask-repeat: no-repeat;
+            mask-size: cover;
+        }
+        .wavy-divider-bottom {
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5,73.84-4.36,147.54,16.88,218.2,35.26,69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z'/%3E%3C/svg%3E");
+            mask-repeat: no-repeat;
+            mask-size: cover;
+        }
+        .floating-accent {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#81290d",
+                        "surface-container-low": "#fcf2e4",
+                        "surface-tint": "#506536",
+                        "primary": "#475b2e",
+                        "on-secondary-fixed": "#3b0a00",
+                        "outline": "#75786d",
+                        "on-surface": "#1f1b13",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#742004",
+                        "on-primary-fixed-variant": "#394d21",
+                        "surface-dim": "#e2d9cb",
+                        "secondary-fixed": "#ffdbd1",
+                        "inverse-primary": "#b7cf96",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#214971",
+                        "surface": "#fff8f2",
+                        "on-tertiary": "#ffffff",
+                        "primary-container": "#5f7444",
+                        "secondary-container": "#ff8763",
+                        "background": "#fff8f2",
+                        "secondary": "#a04022",
+                        "tertiary-fixed": "#d2e4ff",
+                        "inverse-surface": "#353027",
+                        "surface-bright": "#fff8f2",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#ebe1d3",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#c5c8ba",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#e1f9bd",
+                        "surface-container-high": "#f1e7d9",
+                        "primary-fixed-dim": "#b7cf96",
+                        "on-tertiary-container": "#eaf1ff",
+                        "primary-fixed": "#d3ebb0",
+                        "surface-container-highest": "#ebe1d3",
+                        "secondary-fixed-dim": "#ffb59f",
+                        "tertiary-fixed-dim": "#a5c9f9",
+                        "surface-container": "#f6eddf",
+                        "on-surface-variant": "#44483e",
+                        "on-background": "#1f1b13",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#325781",
+                        "tertiary-container": "#4c709b",
+                        "on-primary-fixed": "#102000"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "80px",
+                        "section-gap": "120px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "body-md": ["Work Sans"],
+                        "body-lg": ["Work Sans"],
+                        "label-md": ["Work Sans"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                        "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky bg-surface dark:bg-surface-dim border-b border-outline-variant z-50">
+<nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-full mx-auto">
+<a class="font-headline-md text-headline-md text-secondary dark:text-secondary-fixed italic" href="index.html">The Slow Hearth</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Our Story</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="menu.html">The Menu</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md" href="units.html">The Units</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md text-label-md hover:bg-primary-container transition-all duration-200">
+                Order Now
+            </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative px-margin-mobile md:px-margin-desktop py-section-gap overflow-hidden bg-surface">
+<!-- Floating Decorative Element -->
+<div class="absolute top-20 -left-10 opacity-20 floating-accent hidden lg:block">
+<span class="material-symbols-outlined text-[120px] text-primary">eco</span>
+</div>
+<div class="absolute bottom-20 -right-10 opacity-20 floating-accent hidden lg:block" style="animation-delay: 2s;">
+<span class="material-symbols-outlined text-[100px] text-secondary">potted_plant</span>
+</div>
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<h1 class="font-display-lg text-display-lg mb-6 leading-tight">Nossos Espaços</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-2xl mx-auto">
+                    Cada unidade da The Slow Hearth foi concebida para ser um refúgio da pressa cotidiana. Do frescor do nosso jardim à memória afetiva do casarão, escolha o cenário para o seu momento de pausa.
+                </p>
+</div>
+</section>
+<!-- Unit I: O Jardim -->
+<section class="bg-primary-container/10 py-section-gap relative">
+<div class="absolute top-0 left-0 w-full h-24 bg-surface wavy-divider-bottom"></div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 mt-12">
+<div class="w-full lg:w-1/2 relative">
+<div class="aspect-[4/5] rounded-t-[120px] rounded-b-lg overflow-hidden border border-primary/20 bg-surface-container shadow-sm">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-zUaTgd_p-8xh5zDwiT3lIbWEfO-bjr8XhI7aqvaQIbbECvjfjl7QHyGOhRaMQmzFI2ZipdfqjFT_IL9GasOuEhMoGNOUkfc60p54Mu_dlb3wcrCPQ9aSfjHtwMzW9pSKO3wDbenKv8yxKmjgyWQZ1ZmfpqFqQUbXY9CYEzYfUd2wdofmdAajwAc4eS4YvxbOKlerkIpKqV62dYESXPCtSoOrM82I_hcqw-02dJ8G5vhUOi5quibMANmIslnezbcnCH1axsLQ_PR6"/>
+</div>
+<div class="absolute -bottom-6 -right-6 bg-secondary text-on-secondary p-8 rounded-xl hidden md:block">
+<span class="font-headline-md text-headline-md italic">Aberto ao Ar Livre</span>
+</div>
+</div>
+<div class="w-full lg:w-1/2 space-y-8">
+<span class="text-secondary font-label-md text-label-md tracking-widest uppercase">Unidade I</span>
+<h2 class="font-headline-lg text-headline-lg lg:text-display-lg">O Jardim</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Onde a panificação encontra a natureza. Nossa primeira unidade é um convite para o café da manhã sob as árvores. Aqui, o tempo é medido pelo balanço das folhas e pelo aroma de pão fresco que se espalha pelo pátio.
+                    </p>
+<div class="space-y-4 pt-4">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<span class="font-body-md text-body-md">Rua das Flores, 123 — Jardim Botânico</span>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">schedule</span>
+<span class="font-body-md text-body-md">Terça a Domingo, das 08:00 às 18:00</span>
+</div>
+</div>
+<button class="border-2 border-secondary text-secondary px-10 py-3 rounded-full font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-all duration-300">
+                        Como Chegar
+                    </button>
+</div>
+</div>
+</section>
+<!-- Unit II: O Casarão -->
+<section class="py-section-gap relative">
+<div class="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto flex flex-col lg:flex-row-reverse items-center gap-16">
+<div class="w-full lg:w-1/2 relative">
+<div class="aspect-[4/5] rounded-b-[120px] rounded-t-lg overflow-hidden border border-secondary/20 bg-surface-container shadow-sm">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUW1NcOE6kDwLx3VvGJTTQ5Zr71dwx17F3dArBp0a6pd8Jr_pox03D0c4N2A3MIQNsp5cl0Swj050dQq1RXxRB9JcJN8p9WVTFLD3nnnqtTU0TpxvdIiRSpqnz9ghCxfCAd3B3osEEjVF6boDPqRKauoykw3UvtwhHkmpj6og1fkVrit_6IFIaN69UaUl9uvr3FFHhv84bUDs7217x-jWib5tEtivz0mDG6zR8xQJEwtCzqBenfOCBeNIkihhvFi4wcVjCe6O2gs_-"/>
+</div>
+<div class="absolute -top-6 -left-6 bg-primary text-on-primary p-8 rounded-xl hidden md:block">
+<span class="font-headline-md text-headline-md italic">Arquitetura Histórica</span>
+</div>
+</div>
+<div class="w-full lg:w-1/2 space-y-8">
+<span class="text-secondary font-label-md text-label-md tracking-widest uppercase">Unidade II</span>
+<h2 class="font-headline-lg text-headline-lg lg:text-display-lg">O Casarão</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Um retorno às raízes. Situado em um casarão preservado da década de 40, esta unidade celebra a tradição e o conforto. Com pé-direito alto e lareira central, é o local perfeito para tardes de leitura acompanhadas de um brioche quentinho.
+                    </p>
+<div class="space-y-4 pt-4">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<span class="font-body-md text-body-md">Av. da Memória, 450 — Centro Histórico</span>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">schedule</span>
+<span class="font-body-md text-body-md">Segunda a Sábado, das 09:00 às 20:00</span>
+</div>
+</div>
+<button class="border-2 border-secondary text-secondary px-10 py-3 rounded-full font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-all duration-300">
+                        Como Chegar
+                    </button>
+</div>
+</div>
+</section>
+<!-- Contact Form Section -->
+<section class="bg-surface-container-low py-section-gap relative overflow-hidden">
+<div class="absolute bottom-0 right-0 w-full h-24 bg-surface-container-low wavy-divider-top rotate-180 opacity-20"></div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-5xl mx-auto relative z-10">
+<div class="grid lg:grid-cols-2 gap-16 items-start">
+<div class="space-y-6">
+<h3 class="font-headline-lg text-headline-lg">Entre em Contato</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                            Dúvidas, encomendas especiais ou apenas um "olá"? Adoramos ouvir nossos clientes. Preencha o formulário e responderemos com a paciência que um bom pão exige.
+                        </p>
+<div class="pt-8 space-y-6">
+<div class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="font-label-md text-label-md opacity-60">E-mail</p>
+<p class="font-body-md text-body-md font-medium">ola@theslowhearth.com</p>
+</div>
+</div>
+<div class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="font-label-md text-label-md opacity-60">Telefone / WhatsApp</p>
+<p class="font-body-md text-body-md font-medium">(11) 98765-4321</p>
+</div>
+</div>
+</div>
+</div>
+<form class="bg-white p-10 rounded-3xl border border-outline-variant/30 space-y-6">
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface-variant" for="name">Nome Completo</label>
+<input class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 transition-colors" id="name" placeholder="Seu nome aqui" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface-variant" for="email">E-mail</label>
+<input class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 transition-colors" id="email" placeholder="seu@email.com" type="email"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface-variant" for="unit">Unidade de Interesse</label>
+<select class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 transition-colors" id="unit">
+<option value="">Selecione uma unidade</option>
+<option value="jardim">Unidade I - O Jardim</option>
+<option value="casarao">Unidade II - O Casarão</option>
+<option value="geral">Dúvida Geral</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface-variant" for="message">Mensagem</label>
+<textarea class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 transition-colors resize-none" id="message" placeholder="Como podemos ajudar?" rows="4"></textarea>
+</div>
+<button class="w-full bg-secondary text-on-secondary py-4 rounded-full font-label-md text-label-md hover:opacity-90 transition-opacity" type="submit">
+                            Enviar Mensagem
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface border-t border-outline-variant w-full py-section-gap">
+<div class="flex flex-col md:flex-row justify-between items-start px-margin-mobile md:px-margin-desktop gap-gutter max-w-full mx-auto">
+<div class="space-y-4">
+<span class="font-headline-md text-headline-md text-secondary dark:text-secondary-fixed">The Slow Hearth</span>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant max-w-xs">
+                    Inspirando a vida lenta através da panificação artesanal e espaços de contemplação.
+                </p>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-label-md text-label-md font-bold mb-2">Explore</span>
+<a class="text-on-surface-variant hover:text-secondary underline decoration-secondary underline-offset-4 transition-transform duration-300 hover:translate-x-1 font-body-md text-body-md" href="#">Sustainability</a>
+<a class="text-on-surface-variant hover:text-secondary underline decoration-secondary underline-offset-4 transition-transform duration-300 hover:translate-x-1 font-body-md text-body-md" href="#">Work With Us</a>
+<a class="text-on-surface-variant hover:text-secondary underline decoration-secondary underline-offset-4 transition-transform duration-300 hover:translate-x-1 font-body-md text-body-md" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-secondary underline decoration-secondary underline-offset-4 transition-transform duration-300 hover:translate-x-1 font-body-md text-body-md" href="#">Ingredients</a>
+</div>
+<div class="space-y-4">
+<span class="font-label-md text-label-md font-bold mb-2 block">Newsletter</span>
+<div class="flex gap-2">
+<input class="bg-transparent border-0 border-b border-outline-variant focus:ring-0 py-2 w-48" placeholder="Seu e-mail" type="text"/>
+<button class="material-symbols-outlined text-secondary">arrow_forward</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant mt-12">
+                    © 2024 The Slow Hearth. Crafted with patience and flour.
+                </p>
+</div>
+</div>
+</footer>
+<script>
+        // Simple reveal on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body></html>
