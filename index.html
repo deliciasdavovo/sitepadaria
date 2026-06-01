@@ -109,7 +109,17 @@
             width: 100%;
         }
     </style>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&amp;display=swap" rel="stylesheet"/></head>
+<link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&amp;display=swap" rel="stylesheet"/>
+<style>
+    .hero-text { font-family: 'Mr De Haviland', cursive; }
+    @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeUp 1.2s ease forwards; }
+    .fade-up-delay { animation: fadeUp 1.2s ease 0.4s forwards; opacity: 0; }
+    .fade-up-delay-2 { animation: fadeUp 1.2s ease 0.8s forwards; opacity: 0; }
+</style></head>
 <body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
 <!-- Header / Navigation -->
 <nav class="w-full top-0 sticky z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-full mx-auto transition-transform duration-300">
@@ -125,33 +135,31 @@
 <span class="material-symbols-outlined">menu</span>
 </button>
 </nav>
-<!-- New Hero Section inspired by IMAGE_4 layout with IMAGE_3 background -->
-<header class="relative w-full h-[85vh] flex items-center justify-center overflow-hidden">
+<!-- Hero Section -->
+<header class="relative w-full h-screen flex items-center justify-center overflow-hidden">
 <!-- Full-width background image -->
 <div class="absolute inset-0 z-0">
-<img alt="The Slow Hearth Terrace" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu7YdqajQPbp6psvdpYpqAFnyeeMTcnhOjfHTEZJ21yBbtvV72YGAnwEZP6bMBX0sjYaMSH_LgiCsyAXT8mY0VR37cyFySHhNT4MtbtTp4THi6kU1i-NNXLCyqgutNBF4jXqWiDlEF4JsJYFY_Boeuh0TlM5Tebg22xxLwB7DWrONxe9lbvj9EYOG9XMk8gp8qYbDCTUaPJafN9wo_xtW4jlpHj2p-N_D_2DgrxklSiPNamDWmsVlLbL0irgjeRWY7Xf0LZIwoDRuO"/>
-<!-- Dark overlay for readability as per IMAGE_4 style -->
-<div class="absolute inset-0 bg-black/30"></div>
+<img alt="Delícias da Vovó" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu7YdqajQPbp6psvdpYpqAFnyeeMTcnhOjfHTEZJ21yBbtvV72YGAnwEZP6bMBX0sjYaMSH_LgiCsyAXT8mY0VR37cyFySHhNT4MtbtTp4THi6kU1i-NNXLCyqgutNBF4jXqWiDlEF4JsJYFY_Boeuh0TlM5Tebg22xxLwB7DWrONxe9lbvj9EYOG9XMk8gp8qYbDCTUaPJafN9wo_xtW4jlpHj2p-N_D_2DgrxklSiPNamDWmsVlLbL0irgjeRWY7Xf0LZIwoDRuO"/>
+<div class="absolute inset-0 bg-black/20"></div>
 </div>
-<!-- Centered Content Overlay -->
-<div class="relative z-10 max-w-4xl px-margin-mobile text-center text-white"><div class="mb-4 animate-fade-in">
-<span class="text-5xl md:text-7xl text-white block mb-2 drop-shadow-lg" style="font-family: 'Dancing Script', cursive;">Delícias da Vovó</span>
-<span class="font-headline-md text-white/90 text-lg md:text-xl uppercase tracking-[0.2em] drop-shadow-md">Paixão em servir desde 2005</span>
+<!-- Centered Content -->
+<div class="relative z-10 text-center text-white px-6 flex flex-col items-center gap-6">
+<p class="fade-up hero-text text-[80px] md:text-[120px] lg:text-[150px] leading-none drop-shadow-2xl" style="text-shadow: 0 4px 32px rgba(0,0,0,0.25);">
+    Paixão em servir
+</p>
+<p class="fade-up-delay hero-text text-[52px] md:text-[80px] lg:text-[100px] leading-none drop-shadow-xl" style="text-shadow: 0 4px 24px rgba(0,0,0,0.25);">
+    produzindo delícias desde 2005
+</p>
+<div class="fade-up-delay-2 mt-4">
+<button class="bg-secondary text-on-secondary px-12 py-4 rounded-full font-label-md text-label-md tracking-widest uppercase hover:bg-on-secondary-fixed-variant hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 text-base">
+    Peça Agora
+</button>
 </div>
-<h1 class="font-display-lg text-[40px] md:text-display-lg mb-6 leading-tight drop-shadow-lg">
-            Aqui ajudamos você a viver uma vida <span class="italic">mais artística</span>, todos os dias.
-        </h1>
-<p class="font-body-lg text-body-lg mb-10 max-w-2xl mx-auto leading-relaxed drop-shadow-md">
-            Nascida da paciência e do respeito ao tempo, a Padaria Artesanal é um refúgio para quem busca a essência do pão, o calor do jardim e o sabor de momentos genuínos.
-        </p>
-<div class="flex flex-col md:flex-row gap-4 justify-center items-center">
-<button class="bg-secondary text-on-secondary px-10 py-4 rounded-full font-label-md text-label-md hover:bg-on-secondary-fixed-variant hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                Descubra Nossos Pães
-            </button>
-<button class="border-2 border-white text-white px-10 py-4 rounded-full font-label-md text-label-md hover:bg-white/20 transition-all duration-300 backdrop-blur-sm">
-                Reserva de Mesa
-            </button>
 </div>
+<!-- Scroll indicator -->
+<div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 opacity-70">
+<span class="text-white font-label-md text-xs uppercase tracking-widest">Descubra</span>
+<span class="block w-px h-10 bg-white/60 animate-bounce"></span>
 </div>
 </header>
 <!-- Main Content Section: Bento Collage (Maintained from SCREEN_10) -->
