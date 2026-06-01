@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Café Colonial e Nosso Jardim | The Slow Hearth</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Work+Sans:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Theme Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-secondary-fixed-variant": "#81290d",
+                "surface-container-low": "#fcf2e4",
+                "surface-tint": "#506536",
+                "primary": "#475b2e",
+                "on-secondary-fixed": "#3b0a00",
+                "outline": "#75786d",
+                "on-surface": "#1f1b13",
+                "surface-container-lowest": "#ffffff",
+                "on-secondary-container": "#742004",
+                "on-primary-fixed-variant": "#394d21",
+                "surface-dim": "#e2d9cb",
+                "secondary-fixed": "#ffdbd1",
+                "inverse-primary": "#b7cf96",
+                "on-error": "#ffffff",
+                "on-tertiary-fixed-variant": "#214971",
+                "surface": "#fff8f2",
+                "on-tertiary-fixed": "#001c37",
+                "inverse-on-surface": "#f9efe1",
+                "tertiary": "#325781",
+                "primary-container": "#5f7444",
+                "secondary-container": "#ff8763",
+                "background": "#fff8f2",
+                "secondary": "#a04022",
+                "tertiary-fixed": "#d2e4ff",
+                "inverse-surface": "#353027",
+                "surface-bright": "#fff8f2",
+                "on-primary": "#ffffff",
+                "error": "#ba1a1a",
+                "surface-variant": "#ebe1d3",
+                "error-container": "#ffdad6",
+                "outline-variant": "#c5c8ba",
+                "on-error-container": "#93000a",
+                "on-primary-container": "#e1f9bd",
+                "surface-container-high": "#f1e7d9",
+                "primary-fixed-dim": "#b7cf96",
+                "on-tertiary": "#ffffff",
+                "primary-fixed": "#d3ebb0",
+                "surface-container-highest": "#ebe1d3",
+                "secondary-fixed-dim": "#ffb59f",
+                "tertiary-fixed-dim": "#a5c9f9",
+                "surface-container": "#f6eddf",
+                "on-surface-variant": "#44483e",
+                "on-tertiary-container": "#eaf1ff",
+                "on-background": "#1f1b13",
+                "on-secondary": "#ffffff",
+                "tertiary-container": "#4c709b",
+                "on-primary-fixed": "#102000"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "margin-desktop": "80px",
+                "section-gap": "120px",
+                "margin-mobile": "20px",
+                "gutter": "24px",
+                "unit": "8px"
+            },
+            "fontFamily": {
+                "headline-lg-mobile": ["Libre Caslon Text"],
+                "body-md": ["Work Sans"],
+                "body-lg": ["Work Sans"],
+                "label-md": ["Work Sans"],
+                "headline-lg": ["Libre Caslon Text"],
+                "headline-md": ["Libre Caslon Text"],
+                "display-lg": ["Libre Caslon Text"]
+            },
+            "fontSize": {
+                "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .wavy-divider {
+            mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path></svg>');
+            mask-repeat: no-repeat;
+            mask-size: 100% 100%;
+        }
+        .sketch-hover:hover {
+            transform: scale(1.02) rotate(1deg);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky z-50 bg-surface border-b border-outline-variant">
+<nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-full mx-auto">
+<div class="font-headline-md text-headline-md text-secondary italic"><a href="index.html">The Slow Hearth</a></div>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md" href="#">Our Story</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md" href="menu.html">The Menu</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md" href="units.html">The Units</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md" href="#">Contact</a>
+</div>
+<button class="bg-secondary text-on-secondary px-6 py-2 rounded-full font-label-md hover:opacity-90 transition-opacity active:scale-95">
+                Order Now
+            </button>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-on-surface">menu</span>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex flex-col items-center justify-center text-center px-margin-mobile overflow-hidden pt-12">
+<!-- Decorative Illustration -->
+<div class="absolute -left-10 top-20 opacity-20 pointer-events-none hidden lg:block">
+<span class="material-symbols-outlined text-[200px] text-primary" style="font-variation-settings: 'wght' 100;">spa</span>
+</div>
+<div class="absolute -right-10 bottom-20 opacity-20 pointer-events-none hidden lg:block">
+<span class="material-symbols-outlined text-[200px] text-secondary" style="font-variation-settings: 'wght' 100;">eco</span>
+</div>
+<h1 class="font-display-lg text-[48px] md:text-display-lg max-w-4xl mx-auto mb-6 text-on-surface">
+                Café Colonial e Nosso Jardim: A Fresh Take on Heritage
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-8">
+                Launched with a focus on colorful design and joyful moments, our colonial breakfast is a curated experience of slow living and artisanal craft.
+            </p>
+<div class="flex gap-4">
+<button class="bg-secondary text-on-secondary px-8 py-3 rounded-full font-label-md shadow-sm hover:translate-y-[-2px] transition-all">RESERVE A TABLE</button>
+<button class="border border-primary text-primary px-8 py-3 rounded-full font-label-md hover:bg-surface-container-low transition-all">VIEW GALLERY</button>
+</div>
+<div class="mt-section-gap w-full max-w-6xl mx-auto px-margin-mobile">
+<div class="relative rounded-xl overflow-hidden aspect-[16/9] border border-outline-variant">
+<img alt="Rustic Cafe Interior" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9y6WvPIW16-sAlzqUKBE9hcRzcLe9UdJ2MspDM2o7O2TrHKLQOQWblkpnWdo5s3vemcld88wZnPfb6PeyE26RW2BWAQRFUU1Ivu8tQdn7ZYJFWoA_ZZn1CgiWM21vv5y41nW4GXJDeAODsrd6NQLA1pSdIwKOcvyopvlS0QPJHyhDDcCiV19Plc26cArRLW4sfeiKW9-jsmPkgLwWGx9Xf37Yppkdjy5UgrziIYMfvL1T87EGYAKVVfybbbUvtQcN7OdddWwSe_UL"/>
+</div>
+</div>
+</section>
+<!-- The Buffet Experience (Icon Grid) -->
+<section class="py-section-gap bg-surface-container-low">
+<div class="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto text-center">
+<span class="font-label-md text-secondary uppercase tracking-[0.2em] mb-4 block">Artisanal Craft</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-12">Handpicked Delights</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="flex flex-col items-center p-8 bg-surface rounded-xl border border-outline-variant sketch-hover transition-transform duration-300">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6">bakery_dining</span>
+<h3 class="font-headline-md text-headline-md mb-4">Slow-Rise Breads</h3>
+<p class="text-on-surface-variant">Naturally leavened sourdough and heritage grain pastries baked fresh every morning in our wood-fired oven.</p>
+</div>
+<div class="flex flex-col items-center p-8 bg-surface rounded-xl border border-outline-variant sketch-hover transition-transform duration-300">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">local_cafe</span>
+<h3 class="font-headline-md text-headline-md mb-4">Small-Batch Roast</h3>
+<p class="text-on-surface-variant">Ethically sourced beans, roasted on-site to preserve the delicate floral notes and rich caramel undertones.</p>
+</div>
+<div class="flex flex-col items-center p-8 bg-surface rounded-xl border border-outline-variant sketch-hover transition-transform duration-300">
+<span class="material-symbols-outlined text-tertiary text-5xl mb-6">sell</span>
+<h3 class="font-headline-md text-headline-md mb-4">Local Preserves</h3>
+<p class="text-on-surface-variant">Handcrafted jams and local honey harvested from neighboring farms within a ten-mile radius.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Garden Refuge (Asymmetric Layout) -->
+<section class="py-section-gap overflow-hidden">
+<div class="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2 relative">
+<div class="absolute -top-6 -left-6 w-24 h-24 bg-primary-container rounded-full opacity-30 blur-2xl"></div>
+<img alt="Garden Sanctuary" class="rounded-xl border border-outline-variant relative z-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA--Jv3S9fV9wRlXpEySl4ZGn7ZIocQijKOdFRgRR8PbuFk9OXK3gBywbukK65BHqfn0faW0kcjkFRxD_ZM_5M5O0p94pEvLlJ4qLZ991E2M_Jm6p7Aye2FV9BJJv_hhnd3p2AcPBooweiN9E0vqh031bpM7jloLoDqO1oBJodgA9aMfL7HNBZs5jaoJA_HjMCrpB1ahq39TDkZAt9hckoDIbIUNaa2pp13J8IX2l0YxVQQDsBLFptMQJRVX4oWaDnLtsYJawkin9AW"/>
+</div>
+<div class="w-full md:w-1/2">
+<h2 class="font-display-lg text-headline-lg-mobile md:text-headline-lg mb-6 italic text-primary">A Garden Refuge</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+                            Step into "Nosso Jardim," an organic extension of our kitchen. Here, the slow life is not just a philosophy but a physical space where you can disconnect from the noise and reconnect with the seasonal rhythms of nature.
+                        </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Quiet reading nooks</span>
+</li>
+<li class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Bird-watching stations</span>
+</li>
+<li class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Herb gardens for picking</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Pet Friendly & Community Section (Bento Grid) -->
+<section class="py-section-gap bg-surface-container">
+<div class="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg">Life Together</h2>
+<p class="font-body-md text-on-surface-variant">Celebrating every member of the family.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-gutter h-auto md:h-[600px]">
+<!-- Large Card: Pet Friendly -->
+<div class="md:col-span-2 md:row-span-2 bg-secondary-fixed text-on-secondary-fixed p-10 rounded-xl border border-outline-variant flex flex-col justify-between overflow-hidden relative">
+<div>
+<span class="material-symbols-outlined text-5xl mb-4" style="font-variation-settings: 'FILL' 1;">pets</span>
+<h3 class="font-display-lg text-headline-md md:text-headline-lg mb-4">Always Pet Friendly</h3>
+<p class="font-body-md">Four-legged friends are more than welcome. We offer organic treats and dedicated water bowls throughout the garden.</p>
+</div>
+<div class="mt-8">
+<img alt="Happy Dog in Garden" class="rounded-lg h-48 w-full object-cover grayscale-[20%] hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3rkfUHengJIG9jFZ55BtRcXe-ZKTuLa079eKzyWrEv46EESLE4NROXoWQZJPiGX7OY6nW8ye0D1gwu0YSP-r1AjQ_49E1AT8uE-lY4WK4pUPMZhhUs2Q5_dzvaKADMMQyupySpO7jROiReJrJaoMMZOVMW0eV6sbJbzXOJvCCWW3omgYkm-s1OyyR4tOlr7lc-jH3s4EYDMg9Dkw1ZeO3xECIr8wPOJkWBrsMvJtaRo7gjSUaBhoePVp3pjpljHZ-0xcvuman3LVW"/>
+</div>
+</div>
+<!-- Medium Card: Sustainability -->
+<div class="md:col-span-2 bg-primary-container text-on-primary-container p-8 rounded-xl border border-outline-variant">
+<div class="flex items-start justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">Crafted with Patience</h3>
+<p class="font-body-md opacity-90">We source 90% of our ingredients from local artisans, ensuring a low-carbon footprint and high-quality taste.</p>
+</div>
+<span class="material-symbols-outlined text-4xl">nest_eco_leaf</span>
+</div>
+</div>
+<!-- Small Cards -->
+<div class="bg-surface p-8 rounded-xl border border-outline-variant flex flex-col items-center justify-center text-center">
+<span class="font-display-lg text-secondary">0%</span>
+<p class="font-label-md text-on-surface-variant">PLASTIC WASTE</p>
+</div>
+<div class="bg-surface p-8 rounded-xl border border-outline-variant flex flex-col items-center justify-center text-center">
+<span class="font-display-lg text-primary">12+</span>
+<p class="font-label-md text-on-surface-variant">LOCAL ARTISANS</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-section-gap text-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-5 pointer-events-none">
+<div class="w-full h-full" style="background-image: radial-gradient(#475b2e 1px, transparent 1px); background-size: 20px 20px;"></div>
+</div>
+<div class="px-margin-mobile max-w-3xl mx-auto relative z-10">
+<h2 class="font-display-lg text-headline-lg-mobile md:text-display-lg mb-8">Ready for a Slower Morning?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+                    Join us for our signature Colonial Breakfast, served every Saturday and Sunday from 8:00 AM.
+                </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-secondary text-on-secondary px-10 py-4 rounded-full font-label-md hover:scale-105 transition-transform">BOOK YOUR SPOT</button>
+<button class="bg-surface border border-outline text-on-surface px-10 py-4 rounded-full font-label-md hover:bg-surface-container-low transition-all">FOLLOW OUR STORY</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-surface-container-highest border-t border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-start px-margin-mobile md:px-margin-desktop gap-gutter max-w-7xl mx-auto">
+<div class="flex flex-col gap-4">
+<div class="font-headline-md text-headline-md text-secondary">The Slow Hearth</div>
+<p class="max-w-xs font-body-md text-on-surface-variant">© 2024 The Slow Hearth. Crafted with patience and flour.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-2 gap-12">
+<div class="flex flex-col gap-3">
+<span class="font-label-md text-on-surface font-bold">Discover</span>
+<a class="font-body-md text-on-surface-variant hover:text-secondary underline decoration-secondary underline-offset-4" href="#">Sustainability</a>
+<a class="font-body-md text-on-surface-variant hover:text-secondary underline decoration-secondary underline-offset-4" href="#">Work With Us</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-label-md text-on-surface font-bold">Details</span>
+<a class="font-body-md text-on-surface-variant hover:text-secondary underline decoration-secondary underline-offset-4" href="#">Privacy Policy</a>
+<a class="font-body-md text-on-surface-variant hover:text-secondary underline decoration-secondary underline-offset-4" href="#">Ingredients</a>
+</div>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface flex items-center justify-center hover:bg-secondary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined text-secondary">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface flex items-center justify-center hover:bg-secondary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined text-secondary">mail</span>
+</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple parallax effect for decorative icons
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const icons = document.querySelectorAll('.material-symbols-outlined');
+            icons.forEach((icon, index) => {
+                if(index < 2) { // only for the hero icons
+                    icon.style.transform = `translateY(${scrolled * 0.1 * (index === 0 ? 1 : -1)}px)`;
+                }
+            });
+        });
+    </script>
+</body></html>
